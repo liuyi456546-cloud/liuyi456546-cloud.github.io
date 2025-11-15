@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yi Liu</title>
+<style>
+    body {
+        font-family: sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        line-height: 1.6;
+        padding: 0 20px;
+    }
+    .lang-btn {
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 6px 12px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: 1px solid #aaa;
+        background: #f4f4f4;
+        border-radius: 4px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="lang-btn">
+    <button onclick="showCN()">中文</button>
+    <button onclick="showEN()">English</button>
+</div>
+
+<!-- 中文内容 -->
+<div id="cn">
+    <h1>刘亦 Yi Liu</h1>
+    <p>你好，欢迎来到我的主页。</p>
+
+    <h2>关于我</h2>
+    <p>我目前在伦敦大学学院（UCL）学习数学，本科最后一年。</p>
+    <p>喜欢研究结构性强的数学，表示论、拓扑、群以及一些数学物理。</p>
+
+    <h2>最近在干嘛</h2>
+    <ul>
+        <li>学代数和拓扑</li>
+        <li>做自己的 LaTeX 笔记（TopoNotes）</li>
+        <li>偶尔做饭 / 偶尔玩城市建造游戏</li>
+    </ul>
+
+    <h2>未来打算</h2>
+    <p>继续学数学，慢慢摸清方向，不急。</p>
+
+    <h2>联系方式</h2>
+    <p>Email: your.ucl.email@ucl.ac.uk</p>
+    <p>GitHub: <a href="https://github.com/liuyi456546-cloud">liuyi456546-cloud</a></p>
+</div>
+
+<!-- 英文内容 -->
+<div id="en" style="display:none;">
+    <h1>Yi Liu</h1>
+    <p>Hi, welcome to my personal page.</p>
+
+    <h2>About Me</h2>
+    <p>I’m currently an undergraduate mathematics student at UCL.</p>
+    <p>I enjoy algebraic and geometric structures: representation theory, topology & groups, and some mathematical physics.</p>
+
+    <h2>What I'm into</h2>
+    <ul>
+        <li>Learning algebra & topology</li>
+        <li>Writing notes with my LaTeX style (TopoNotes)</li>
+        <li>Cooking / building cities in games</li>
+    </ul>
+
+    <h2>What’s next</h2>
+    <p>Keep learning mathematics and figure things out slowly.</p>
+
+    <h2>Contact</h2>
+    <p>Email: your.ucl.email@ucl.ac.uk</p>
+    <p>GitHub: <a href="https://github.com/liuyi456546-cloud">liuyi456546-cloud</a></p>
+</div>
+
+<script>
+    function showCN() {
+        document.getElementById("cn").style.display = "block";
+        document.getElementById("en").style.display = "none";
+    }
+    function showEN() {
+        document.getElementById("cn").style.display = "none";
+        document.getElementById("en").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
